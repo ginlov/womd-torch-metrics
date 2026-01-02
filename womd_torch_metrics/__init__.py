@@ -29,6 +29,15 @@ from womd_torch_metrics.motion_metrics import (
     TRAJECTORY_TYPE_RIGHT_TURN,
 )
 
+from womd_torch_metrics.map_metrics import (
+    compute_map_metrics,
+    compute_distance_to_road_edge,
+    compute_offroad_rate,
+    compute_bounding_box_corners,
+    compute_signed_distance_to_polylines,
+    OFFROAD_DISTANCE_THRESHOLD,
+)
+
 __version__ = "0.1.0"
 __all__ = [
     "compute_motion_metrics",
@@ -57,4 +66,11 @@ __all__ = [
     "TRAJECTORY_TYPE_LEFT_TURN",
     "TRAJECTORY_TYPE_RIGHT_U_TURN",
     "TRAJECTORY_TYPE_RIGHT_TURN",
+    # Map metrics
+    "compute_map_metrics",
+    "compute_distance_to_road_edge",
+    "compute_offroad_rate",
+    "compute_bounding_box_corners",
+    "compute_signed_distance_to_polylines",
+    "OFFROAD_DISTANCE_THRESHOLD",
 ]
